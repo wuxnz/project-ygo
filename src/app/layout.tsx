@@ -4,6 +4,8 @@ import { GeistSans } from "geist/font/sans";
 import { type Metadata } from "next";
 
 import { TRPCReactProvider } from "@/trpc/react";
+import { Providers } from "./_components/heroui/providers";
+import { SessionProvider } from "next-auth/react";
 
 export const metadata: Metadata = {
   title: "Create T3 App",
@@ -17,7 +19,11 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${GeistSans.variable}`}>
       <body>
-        <TRPCReactProvider>{children}</TRPCReactProvider>
+        <TRPCReactProvider>
+          <SessionProvider>
+            <Providers>{children}</Providers>
+          </SessionProvider>
+        </TRPCReactProvider>
       </body>
     </html>
   );
