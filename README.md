@@ -36,6 +36,12 @@ This is a work-in-progress T3 (Next.js) website for the Yu-Gi-Oh! community, pro
 
 ---
 
+## Screenshots
+
+| Home Page (Will change) |
+|-------------------------|
+| <img src="screenshots/Home.png" width="1000" /> |
+
 ## Installation
 1. Clone the repository:
    ```sh
