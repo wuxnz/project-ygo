@@ -33,7 +33,7 @@ function NavBar() {
   return (
     <Navbar className="bg-background-light/50 isolate shadow-lg ring-1 ring-black/5">
       <NavbarBrand>
-        <AcmeLogo />
+        {/* <AcmeLogo /> */}
         <p className="font-bold text-inherit">TDCC</p>
       </NavbarBrand>
       <NavbarContent className="hidden gap-4 sm:flex" justify="center">

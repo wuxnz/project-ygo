@@ -6,6 +6,8 @@ import { api, HydrateClient } from "@/trpc/server";
 import NavBar from "./_components/navigation/NavBar";
 import { WavyBackground } from "@/components/ui/wavy-background";
 
+import { TunnelToolbar } from "@tunnel/nextjs";
+
 export default async function Home() {
   const hello = await api.post.hello({ text: "from tRPC" });
   const session = await auth();
@@ -17,6 +19,7 @@ export default async function Home() {
   return (
     <HydrateClient>
       <main className="relative h-full">
+        <TunnelToolbar projectId="7c5a0b9f-4e6c-4f4c-8e9a-6e9e4c4d4e4d" />
         <NavBar />
         <div className="bg-background flex h-[calc(100%-65px)] flex-col items-center justify-center">
           <div className="container flex flex-col items-center justify-center gap-12 px-4 py-16">
