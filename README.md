@@ -1,29 +1,67 @@
-# Create T3 App
+# Yu-Gi-Oh T3 Next.js Website
 
-This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
+This is a work-in-progress T3 (Next.js) website for the Yu-Gi-Oh! community, providing features such as tournament advertisements, deck viewing, and account management.
 
-## What's next? How do I make an app with this?
+---
 
-We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
+## Tech Stack
+- **Next.js** - React Framework
+- **TRPC** - API development
+- **Drizzle ORM** - SQLite Database
+- **NextAuth.js** - Authentication (Discord login implemented)
+- **Stripe** - Payment integration
+- **Tailwind CSS 3** - Styling
+- **Aceternity - UI components
+- **Shadcn - UI components
 
-If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
+---
 
-- [Next.js](https://nextjs.org)
-- [NextAuth.js](https://next-auth.js.org)
-- [Prisma](https://prisma.io)
-- [Drizzle](https://orm.drizzle.team)
-- [Tailwind CSS](https://tailwindcss.com)
-- [tRPC](https://trpc.io)
+## Planned Features
+1. **Post Board for Tournament Advertisements**
+   - Users can post their upcoming tournaments.
+   - Paid postings with top-up options for ranking higher.
+2. **Deck Viewing and Editing**
+   - Browse Yu-Gi-Oh! decks.
+   - Potential for deck-building capabilities.
+3. **Account Management**
+   - Sign Up/Login via Discord (Already implemented using NextAuth.js).
+4. **Stripe Integration**
+   - Accept payments for tournament listings and potential premium features.
+5. **Database with Drizzle ORM**
+   - Using SQLite for storing data efficiently.
+6. **API with TRPC**
+   - Fully type-safe API for handling backend logic.
+7. **Tailwind CSS 3 for Styling**
+   - Modern, utility-first CSS framework for responsive and clean design.
 
-## Learn More
+---
 
-To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
+## Installation
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/wuxnz/project-ygo.git
+   cd project-ygo
+   ```
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
+3. Migrate the database:
+   ```sh
+   npm run db:push
+   ```
+4. Run the development server:
+   ```sh
+   npm run dev
+   ```
 
-- [Documentation](https://create.t3.gg/)
-- [Learn the T3 Stack](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
+---
 
-You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
+## Contributions
+Since this project is still in early development, contributions and feature suggestions are welcome!
 
-## How do I deploy this?
+---
 
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+## License
+This project is licensed under the MIT License.
+
