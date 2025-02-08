@@ -1,4 +1,4 @@
-# Yu-Gi-Oh T3 Next.js Website
+# Top Deck Community Circut: A Yu-Gi-Oh T3 Next.js Website
 
 This is a work-in-progress T3 (Next.js) website for the Yu-Gi-Oh! community, providing features such as tournament advertisements, deck viewing, and account management.
 
